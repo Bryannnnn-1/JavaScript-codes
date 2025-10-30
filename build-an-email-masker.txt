@@ -1,0 +1,32 @@
+** start of script.js **
+
+function maskEmail(email) {
+  const getIndexOfAt = email.indexOf("@");
+
+  const getName = email.slice(0, getIndexOfAt);
+
+  const domain = email.slice((getIndexOfAt));
+
+  const firstLetterOfName = getName[0];
+
+  const lastLetterOfName = getName[getName.length -1];
+
+  const slicedName = getName.slice(1, getName.length - 1);
+
+  const maskedMiddle = "*".repeat(getName.length - 2);
+
+  const maskedName = getName[0] + maskedMiddle + getName[getName.length - 1];
+
+
+  const fullMaskedEmail = maskedName + domain;
+
+  return fullMaskedEmail
+  
+
+}
+
+let email = "bryannnnnnn.11111@gmail.com";
+console.log(maskEmail(email));
+
+** end of script.js **
+

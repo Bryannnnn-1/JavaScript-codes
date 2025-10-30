@@ -1,0 +1,93 @@
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color:rgb(0, 0, 0);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+h1, h2, h3, p{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    background-color: #00697b;
+    transform: scale(1.05);
+}
+
+.password-generator {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #667eea, #0f6931);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    margin: 50px;
+    text-align: left;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#result {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    text-align: center;
+}

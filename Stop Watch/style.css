@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    color:white;
+    font-size: 50px;
+}
+
+button {
+    color:white;
+    background: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px;
+    border: none;
+    padding: 15px 10px 15px;
+}
+
+button:hover {
+    background: darkred;
+}

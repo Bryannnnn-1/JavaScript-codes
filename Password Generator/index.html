@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="myLogo.png" type="image/x-icon">
+</head>
+
+
+<body>
+
+    <section class="password-generator">
+        <div>
+            <h1>Password Generator</h1>
+            <div class="container">
+                <div>
+                    <textarea id="result" readonly placeholder="There's a logical error in this program. It will be fixed ASAP!🙂"></textarea>
+                </div>
+                <button onclick="main()">Generate Password</button>
+            </div>
+            <div class="options">
+                <label><input type="checkbox" id="uppercase"> Include Uppercase Letters</label>
+                <br>
+                <label><input type="checkbox" id="lowercase"> Include Lowercase Letters</label>
+                <br>
+                <label><input type="checkbox" id="numbers"> Include Numbers</label>
+                <br>
+                <label><input type="checkbox" id="symbols"> Include Symbols</label>
+                <br>
+                <label>Password Length: <input type="number" id="length" value="10" min="10" max="60"></label>
+            </div>
+            <p id="error-message"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

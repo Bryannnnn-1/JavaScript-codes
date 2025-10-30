@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-style: bold;
+    background-color: black;
+    color: azure;
+    text-align: center;
+}
+
+#message {
+    font-size: 2em;
+}
+
+#submitBtn {
+    padding:10px 20px;
+    font-size:1em;
+    color:white;
+    background-color: rgb(80, 80, 250);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#submitBtn:hover{
+    background-color: rgb(3, 3, 93);
+}
+
+#userInput {
+    padding: 10px 20px;
+}
+
+#attempLabel {
+    font-size: 3em;
+}
+
+#warning1{
+    color:red;
+    font-size: 13px;
+}
+
+#warning2 {
+    color:red;
+}

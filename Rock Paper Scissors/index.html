@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>"Rock Paper Scissors" Game</h1>
+    </header>
+
+    <main>
+        <section class="gameSetup">
+            <h2>Welcome to the classic "Rock Paper Scissors" game! Choose your weapon and see if you can beat the computer.</h2>
+            <br>
+            <div class="gameOptions">
+                <h3>I want to play best of: </h3>
+                <input type="radio" id="bestOf3" name="bestOf" value="3" class="radioCheck">
+                <label for="bestOf3">3</label>
+                <br>
+                <input type="radio" id="bestOf5" name="bestOf" value="5" class="radioCheck">
+                <label for="bestOf5">5</label>
+                <br>
+                <input type="radio" id="bestOf7" name="bestOf" value="7" class="radioCheck">
+                <label for="bestOf7">7</label>          
+            </div>
+            <br>
+            <h3 id="errorMessage" style="color: rgb(149, 0, 0);"></h3>
+            <div>
+                <button class="GameButton" onclick="StartCheck()">Start Game</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

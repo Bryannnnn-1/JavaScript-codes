@@ -1,0 +1,33 @@
+body {
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+#number {
+    display:block;
+    font-size: 9em;
+    color: white;
+}
+
+.buttons {
+    padding:10px 15px;
+    font-size:1.5em;
+    color:white;
+    background-color: rgb(80, 80, 250);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+
+}
+.buttons:hover{
+    background: rgb(3, 3, 93);
+}
+
+h1 {
+    color: white;
+
+}
