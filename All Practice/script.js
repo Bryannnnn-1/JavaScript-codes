@@ -1,29 +1,29 @@
+const storyContainer = document.querySelector(".story-container");
 
-const rect = document.getElementById("rect");
+const scaryStoryBtn = document.getElementById("scary-btn");
+const funnyStoryBtn = document.getElementById("funny-btn");
+const adventureStoryBtn = document.getElementById("adventure-btn");
 
-// start with a position of 0
-let position = 0;
+const resultParagraph = document.getElementById("result");
 
-function update() {
-  // Move the rectangle 2px to the right
-  rect.style.left = position + "px";
-  position += 2;
+const storyObj = {
+  scary: {
+    story: `In the dark woods, a group of friends stumbled upon an old, abandoned cabin. They enter the cabin and awaken something malevolent that had been dormant for centuries.`,
+    borderColor: "#ee4b2b",
+  },
+  funny: {
+    story: `During a camping trip, Mark decided to show off his culinary skills by cooking dinner over an open fire. However, his attempt caused him to burn the dinner as well as his eyebrows off.`,
+    borderColor: "#f1be32",
+  },
+  adventure: {
+    story: `Lost in the heart of the Amazon rain forest, Sarah and Jake stumbled upon an ancient temple. They braved deadly traps and encountered strange wildlife, all while deciphering cryptic clues left behind by a mysterious civilization.`,
+    borderColor: "#acd157"
+  },
+};
 
-  // Reset the position when the rectangle reaches
-  // the right side of the screen
-  if (position > window.innerWidth) {
-    // Move the rectangle just outside the left side of the screen
-    position = -rect.offsetWidth;
-  }
+function displayStory(genre) {
+  console.log(storyObj.hasOwnProperty(genre));
 }
 
-function animate() {
-  // Update the position
-  update();
+scaryStoryBtn.addEventListener("click", displayStory);
 
-  //request the next frame
-  requestAnimationFrame(animate);
-}
-
-// Start the animation
-requestAnimationFrame(animate);
